@@ -1,0 +1,37 @@
+/* Part 1: Button Hover Animation */
+#hoverBtn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#hoverBtn:hover {
+  transform: scale(1.1);
+  background-color: #2ecc71;
+}
+
+/* Part 3: Box Animation */
+#animatedBox {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.animate {
+  animation: fadeSlide 1s forwards;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
